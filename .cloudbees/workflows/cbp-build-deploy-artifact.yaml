@@ -15,16 +15,16 @@ jobs:
         kind: build
         uses: cloudbees-io/register-build-artifact@v1
         with:
-          name: cbp-qa-test-01
+          name: cbp-qa-test-02
           version: 1.0.0
-          url: docker.io/artifact/cbp-qa-test-01:1.0.0
-          digest: sha256:1a1123ee08af5e43a7fea6c4cf9c25ccf269ee113168c19722f87876677c5cb2
+          url: docker.io/artifact/cbp-qa-test-02:1.0.0
+          digest: sha256:1b1123ee08af5e43a7fea6c4cf9c25ccf269ee113168c19722f87876677c5cb2
       - name: Publish deploy  artifact
         kind: deploy
         uses: cloudbees-io/register-deployed-artifact@v1
         with:
-          name: cbp-qa-test-01
+          name: cbp-qa-test-02
           version: 1.0.0
-          url: docker.io/artifact/cbp-qa-test-01:1.0.0
-          digest: sha256:1a1123ee08af5e43a7fea6c4cf9c25ccf269ee113168c19722f87876677c5cb2
+          url: docker.io/artifact/cbp-qa-test-02:1.0.0
+          digest: sha256:1b1123ee08af5e43a7fea6c4cf9c25ccf269ee113168c19722f87876677c5cb2
           target-environment: qa-test
